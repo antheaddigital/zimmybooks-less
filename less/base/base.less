@@ -4,8 +4,8 @@ html {
 
 body {
   position: relative;
-  background-color: @browser-background-color;
-  font-family: 'OpenSans-Regular', sans-serif;
+  background-color: #abceff;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .clear {
@@ -19,33 +19,36 @@ body {
 }
 
 .site-wrapper {
-  padding-top: 48px;
+  padding-top: 80px;
+  //padding-top: 48px;
   text-align: center;
   @media (min-width: 880px){
-    padding-top: 60px;
+    padding-top: 80px;
   }
 }
 
-.site-content {
+.site-content,
+.header-content {
   width: 100%;
   margin: 0 auto;
   padding: 0;
   background-color: #fff;
   @media (min-width: 1225px){
     width: 1200px;
-    // border-left: 5px solid @site-content-border;
-    // border-right: 5px solid @site-content-border;
+    border-left: 5px solid #3374ff;
+    border-right: 5px solid #3374ff;
   }
   // @media (min-width: 1440px){
   //   width: 1440px;
   // }
 }
 
-.site-content-border {
+.site-content-border,
+.header-border {
   @media (min-width: 1225px){
     display: inline-block;
-    // border-left: 5px solid @site-content-border;
-    // border-right: 5px solid @site-content-border;
+    border-left: 5px solid #7dbcfa;
+    border-right: 5px solid #7dbcfa;
   }
 }
 
@@ -53,11 +56,4 @@ section,
 .header,
 .footer {
   text-align: center;
-}
-
-.container {
-  margin: 0 auto;
-  @media (min-width: 1225px){
-    width: 1200px;
-  }
 }
