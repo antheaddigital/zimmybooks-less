@@ -11,71 +11,184 @@
       margin: 0 auto;
       background-image: url('../imgs/games/save-the-pig/background.jpg');
       position: relative;
-      .game-control-board {
+      .game-head-board {
         width: 710px;
-        height: 350px;
+        height: 362px;
         padding: 20px;
         background-color: rgba(0, 0, 0, .2);
         text-align: left;
         position: absolute;
-        top: 10px;
+        top: 5px;
         left: 242px;
         z-index: 9999;
-        .controls {
+      }
+      .game-logo-sign {
+        width: 710px;
+        height: 120px;
+        background-color: rgba(0, 0, 0, .2);
+        font-size: 95px;
+        font-weight: bolder;
+        color: yellow;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+      }
+      .game-control-board {
+        width: 710px;
+        height: 153px;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        .player-score-board {
           position: absolute;
-          top: 170px;
-          left: 20px;
-          button {
-            width: 180px;
-            padding: 15px 0;
-            margin-bottom: 5px;
-            font-size: 38px;
-            text-transform: uppercase;
-            display: block;
-            text-align: center;
-
+          top: -68px;
+          left: 28px;
+          border: 5px solid #fff;
+          .player-score {
+            width: 450px;
+            background-color: #000;
+            display: inline-block;
+            position: relative;
+            border-right: 5px solid #fff;
+            float: left;
+            .score-label {
+              padding: 4px 10px;
+              font-size: 15px;
+              color: #fff;
+              text-transform: uppercase;
+              position: absolute;
+              top: -32px;
+              left: 0;
+              display: inline-block;
+              border: 5px solid #fff;
+              border-bottom-color: #000;
+              background-color: #000;
+            }
+            .score {
+              padding: 4px 10px;
+              font-family: 'Audiowide', cursive;
+              font-size: 44px;
+              color: #00f700;
+              display: inline-block;
+            }
           }
-          .start-game {
-
-          }
-          .stop-game {
-
+          .player-streak {
+            width: 186px;
+            background-color: #000;
+            display: inline-block;
+            position: relative;
+            float: left;
+            .streak-label {
+              padding: 4px 10px;
+              font-size: 15px;
+              color: #fff;
+              text-transform: uppercase;
+              position: absolute;
+              top: -32px;
+              left: 0;
+              display: inline-block;
+              border: 5px solid #fff;
+              border-bottom-color: #000;
+              background-color: #000;
+            }
+            .streak {
+              padding: 4px 10px;
+              font-family: 'Audiowide', cursive;
+              font-size: 44px;
+              color: #00d0ff;
+              display: inline-block;
+            }
           }
         }
-        .mode {
+        .controls {
           position: absolute;
-          top: 170px;
-          left: 207px;
-          border: 5px solid #ccc;
-          border-radius: 20px;
-          background-color: #168600;
-          span {
+          top: 0;
+          left: 27px;
+          button {
+            width: 160px;
+            padding: 16px 0;
+            margin-bottom: 5px;
+            font-size: 29px;
+            font-weight: bold;
             text-transform: uppercase;
             display: block;
             text-align: center;
+            .border-radius(40px);
+            border: 4px solid;
+            outline: none;
+            &:hover {
+              cursor: pointer;
+            }
+            &.start-game {
+              .background-image(linear-gradient(to bottom, #00c718 0%,#074e00 100%));
+              color: #00460d;
+              border-color: #054a00;
+              &.active {
+                .background-image(linear-gradient(to bottom, #00ab15 0%,#16fb00 100%));
+                color: #fff;
+                border-color: #fff;
+              }
+            }
+            &.stop-game {
+              .background-image(linear-gradient(to bottom, #d20000 0%,#8c0000 100%));
+              color: #520000;
+              border-color: #610000;
+              &.active {
+                .background-image(linear-gradient(to bottom, #a90000 0%,#ff0000 100%));
+                color: #fff;
+                border-color: #fff;
+              }
+            }
+          }
+
+        }
+        .mode {
+          width: 270px;
+          height: 152px;
+          position: absolute;
+          top: 0;
+          left: 191px;
+          border: 5px solid #7b4f00;
+          .border-radius(20px);
+          background-color: #168600;
+          text-align: center;
+          span {
+            margin-bottom: 9px;
+            padding: 6px 0 10px 0;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-align: center;
+            background: #7b4f00;
+            color: #fff;
+            display: block;
+            .border-top-left-radius(10px);
+            .border-top-right-radius(10px);
           }
           a {
-            width: 175px;
-            height: 77px;
+            width: 120px;
+            height: 94px;
             margin-bottom: 5px;
             padding: 10px 15px;
             border: none;
             background-color: #333;
             color: #fff;
             text-decoration: none;
-            display: block;
+            .border-radius(10px);
+            display: inline-block;
             &.active {
-              background-color: green;
+              background-color: #2b4ba3;
             }
           }
         }
         .inputs {
+          width: 215px;
           position: absolute;
-          top: 170px;
-          left: 387px;
+          top: 0;
+          left: 465px;
           .input-wrapper {
-            width: 125px;
-            padding: 15px;
+            width: 105px;
+            padding: 10px;
             text-align: center;
             border: 5px solid #7b4f00;
             background-color: #b0723b;
@@ -84,7 +197,7 @@
             .border-radius(20px);
             label {
               margin-bottom: 5px;
-              font-size: 18px;
+              font-size: 16px;
               text-transform: uppercase;
               letter-spacing: 1px;
               display: block;
@@ -115,19 +228,13 @@
           }
         }
       }
-      .player-score {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        color: red;
-      }
       .hidden-track {
         width: 740px;
         height: 233px;
         position: absolute;
         background-image: url('../imgs/games/save-the-pig/ice-table.png');
         background-repeat: no-repeat;
-        bottom: 5px;
+        bottom: 0;
         left: 225px;
         z-index: 9999;
       }
@@ -161,8 +268,9 @@
         div {
           width: 73px;
           height: 74px;
+          font-family: 'Pangolin', cursive;
           text-transform: uppercase;
-          font-size: 24px;
+          font-size: 80px;
         }
         &.sign {
           div {
@@ -248,6 +356,34 @@
           background-position: -292px -222px;
         }
       }
+      .water-barrel-wrapper {
+        width: 240px;
+        height: 600px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        .zimmy {
+          width: 240px;
+          height: 360px;
+          background-image: url('../imgs/games/save-the-pig/zimmy.gif');
+        }
+        .water-barrel {
+          width: 240px;
+          height: 240px;
+          background-image: url('../imgs/games/save-the-pig/water-barrel.png');
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+        .water-barrel-ad {
+          width: 180px;
+          height: 110px;
+          background-image: url('../imgs/games/save-the-pig/water-barrel-ad.png');
+          position: absolute;
+          bottom: 20px;
+          left: 30px;
+        }
+      }
     }
     .keyboard-wrapper {
       width: 460px;
@@ -256,7 +392,7 @@
       background-image: url('../imgs/games/save-the-pig/keyboard-backboard.png');
       background-size: cover;
       position: absolute;
-      bottom: 5px;
+      bottom: 0;
       left: 366px;
       z-index: 9999;
     }
