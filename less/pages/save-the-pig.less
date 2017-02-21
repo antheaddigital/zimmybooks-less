@@ -20,7 +20,7 @@
         position: absolute;
         top: 5px;
         left: 238px;
-        z-index: 9999;
+        z-index: 1;
       }
       .game-logo-sign {
         width: 710px;
@@ -190,7 +190,7 @@
           left: 465px;
           .input-wrapper {
             width: 105px;
-            padding: 10px;
+            padding: 11px 8px;
             text-align: center;
             border: 5px solid #7b4f00;
             background-color: #b0723b;
@@ -199,7 +199,8 @@
             .border-radius(20px);
             label {
               margin-bottom: 5px;
-              font-size: 16px;
+              font-size: 12px;
+              font-weight: bold;
               text-transform: uppercase;
               letter-spacing: 1px;
               display: block;
@@ -210,7 +211,7 @@
               margin: 0;
             }
             input {
-              width: 50px;
+              width: 60px;
               padding: 5px;
               font-size: 34px;
               margin: 0 auto;
@@ -238,7 +239,7 @@
         background-repeat: no-repeat;
         bottom: 0;
         left: 225px;
-        z-index: 9999;
+        z-index: 2;
       }
       .kid-dog-announcer {
         width: 240px;
@@ -249,12 +250,12 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        z-index: 9999;
+        z-index: 3;
       }
       .pig-box {
         width: 270px;
         height: 200px;
-        background-image: url('../imgs/games/save-the-pig/pig-1.gif');
+        //background-image: url('../imgs/games/save-the-pig/pig-1.gif');
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
@@ -377,6 +378,7 @@
           position: absolute;
           bottom: 0;
           left: 0;
+          z-index: 1;
         }
         .water-barrel-ad {
           width: 180px;
@@ -385,6 +387,29 @@
           position: absolute;
           bottom: 20px;
           left: 30px;
+          text-align: center;
+          .ad {
+          }
+          .strikes {
+            width: 150px;
+            margin: 12px auto 0 auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #fff;
+            .strikes-header {
+              font-family: 'Pangolin', sans-serif;
+              font-size: 32px;
+              color: #763600;
+            }
+            .strike {
+              font-family: 'Acme', serif;
+              font-size: 36px;
+              color: #ccc;
+              &.active {
+                color: red;
+              }
+            }
+          }
         }
       }
     }
@@ -397,7 +422,7 @@
       position: absolute;
       bottom: 0;
       left: 366px;
-      z-index: 9999;
+      z-index: 2;
     }
     .keys-row {
       margin-bottom: 5px
@@ -420,6 +445,29 @@
     }
     .keys-row-3 {
       margin-right: 45px;
+    }
+    .game-finished-popup {
+      &-header {
+
+      }
+      &-score-wrapper {
+
+      }
+      &-score {
+
+      }
+      &-streak {
+
+      }
+      &-social-wrapper {
+
+      }
+      &-social-facebook {
+
+      }
+      &-social-twitter {
+        
+      }
     }
   }
 
