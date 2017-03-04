@@ -10,7 +10,6 @@ module.exports = function(grunt) {
         },
         files: {
 					"../zimmybooks/wp-content/themes/zimmyb-site/style.css": "less/main.less"
-					//"../zimmybooks/wp-content/themes/zimmyb-site/css/save-the-pig.css": "less/save-the-pig.less"
         }
       }
     },

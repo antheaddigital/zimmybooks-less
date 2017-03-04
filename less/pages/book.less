@@ -8,10 +8,6 @@
   }
 
   .book-section {
-    
-    &.fullscreen {
-
-    }
     .slider {
       /*max-width: 900px;*/
       margin: 0 auto;
@@ -72,26 +68,36 @@
       cursor: pointer !important;
     }
 
-    .full-page-switch-wrapper {
-      width: 100%;
-      text-align: center;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    .full-page-switch {
-      /*margin-bottom: 20px;*/
-      margin: 0 auto;
-      padding: 10px 15px;
+    .fullscreen-btn {
+      margin-top: 20px;
       display: inline-block;
-      background-color: orange;
+      padding: 20px;
+      .border-radius(10px);
       text-decoration: none;
-      color: #000;
-      opacity: .7;
     }
-    .full-page-switch:hover {
-      opacity: 1;
+
+  }
+
+  &.book-siteview {
+    .page-planet-colors {
+      .book-section {
+        padding: 50px 130px;
+        .fullscreen-btn {
+          .background-image(linear-gradient(to bottom, #3173ab 0%,#197e88 100%));
+          color: #fff;
+          font-weight: 600;
+          &:hover {
+            .background-image(linear-gradient(to bottom, #50a1e4 0%,#09a6b5 100%));
+            color: #fff;
+          }
+        }
+      }
     }
   }
+
+  &.book-fullscreen {
+
+  }
+
 
 }
