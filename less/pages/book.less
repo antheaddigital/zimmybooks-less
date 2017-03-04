@@ -1,5 +1,24 @@
 .page-template-book {
 
+  .mfp-wrap {
+    .mfp-close {
+      padding: 0;
+      text-align: center;
+      background-color: #0035bb;
+      color: #fff;
+      &:active {
+        top: 0;
+      }
+      &:hover {
+        background-color: #2557d6;
+      }
+      i {
+        font-size: 34px;
+        line-height: 28px;
+      }
+    }
+  }
+
   .page-planet-colors {
     .book-section {
       background-image: url('imgs/books/planet-colors/background.jpg');
@@ -8,6 +27,54 @@
   }
 
   .book-section {
+    .book-fullscreen-nav {
+      position: absolute;
+      top: 0;
+      left: -55px;
+      a {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 5px;
+        padding-top: 7px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 12px;
+        font-weight: bold;
+        .border-radius(5px);
+        opacity: .7;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      .site-nav {
+        background-color: green;
+        i {
+          font-size: 19px;
+          margin-bottom: 4px;
+        }
+      }
+      .back-to-siteview {
+        background-color: blue;
+        font-size: 12px;
+        font-weight: bold;
+        i {
+          font-size: 19px;
+          margin-bottom: 4px;
+        }
+      }
+      .share {
+        background-color: orange;
+        font-size: 12px;
+        font-weight: bold;
+        i {
+          font-size: 19px;
+          margin-bottom: 4px;
+        }
+      }
+    }
     .slider {
       /*max-width: 900px;*/
       margin: 0 auto;
@@ -96,7 +163,12 @@
   }
 
   &.book-fullscreen {
-
+    .book-section {
+      .wrapper {
+        display: inline-block;
+        position: relative;
+      }
+    }
   }
 
 
