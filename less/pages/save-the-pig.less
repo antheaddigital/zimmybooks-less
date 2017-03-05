@@ -14,26 +14,22 @@
       .game-head-board {
         width: 710px;
         height: 362px;
-        background-image: url('imgs/games/save-the-pig/bigboardsign.png');
+        background-image: url('imgs/games/save-the-pig/bigboard.png');
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
         top: 5px;
-        left: 278px;
-        z-index: 1;
+        left: 288px;
+        z-index: 0;
       }
       .game-logo-sign {
         width: 710px;
-        height: 100px;
-        background-color: rgba(0, 0, 0, .2);
-        font-size: 95px;
-        font-weight: bolder;
-        color: yellow;
+        height: 362px;
+        background-image: url('imgs/games/save-the-pig/save-the-pig-sign.gif');
         position: absolute;
-        top: 0;
-        left: 0;
-        text-align: center;
-        display: none;
+        top: 1px;
+        left: -4px;
+        z-index: 1;
       }
       .game-control-board {
         width: 710px;
@@ -41,6 +37,7 @@
         position: absolute;
         bottom: 10px;
         left: 0;
+        z-index: 2;
         .player-score-board {
           position: absolute;
           top: -68px;
@@ -374,7 +371,7 @@
         .water-barrel {
           width: 240px;
           height: 240px;
-          background-image: url('imgs/games/save-the-pig/barrel-still.gif');
+          background-image: url('imgs/games/save-the-pig/barrel-animated.gif');
           position: absolute;
           bottom: 0;
           left: 0;
