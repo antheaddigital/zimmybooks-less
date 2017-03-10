@@ -11,6 +11,17 @@
       margin: 0 auto;
       background-image: url('imgs/games/save-the-pig/background.jpg');
       position: relative;
+      .audience {
+        width: 1270px;
+        height: 280px;
+        background-image: url('imgs/games/save-the-pig/background-audience.gif');
+        //background-size: contain;
+        .blur(1px);
+        bottom: 130px;
+        left: 0;
+        position: absolute;
+        z-index: 4;
+      }
       .game-head-board {
         width: 710px;
         height: 362px;
@@ -20,7 +31,7 @@
         position: absolute;
         top: 5px;
         left: 288px;
-        z-index: 0;
+        z-index: 5;
       }
       .game-logo-sign {
         width: 710px;
@@ -29,7 +40,7 @@
         position: absolute;
         top: 1px;
         left: -4px;
-        z-index: 1;
+        z-index: 6;
       }
       .game-control-board {
         width: 710px;
@@ -37,7 +48,7 @@
         position: absolute;
         bottom: 10px;
         left: 0;
-        z-index: 2;
+        z-index: 7;
         .player-score-board {
           position: absolute;
           top: -68px;
@@ -236,7 +247,7 @@
         background-repeat: no-repeat;
         bottom: 0;
         left: 275px;
-        z-index: 2;
+        z-index: 7;
       }
       .kid-dog-announcer {
         width: 360px;
@@ -247,7 +258,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        z-index: 3;
+        z-index: 8;
       }
       .pig-box {
         width: 270px;
@@ -360,27 +371,15 @@
       .water-barrel-wrapper {
         width: 240px;
         height: 600px;
+        background-image: url('imgs/games/save-the-pig/zimmy-barrel-animated.gif');
         position: absolute;
         bottom: 0;
         right: 10px;
-        .zimmy {
-          width: 240px;
-          height: 360px;
-          background-image: url('imgs/games/save-the-pig/zimmy.gif');
-        }
-        .water-barrel {
-          width: 240px;
-          height: 240px;
-          background-image: url('imgs/games/save-the-pig/barrel-animated.gif');
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          z-index: 1;
-        }
+        z-index: 6;
         .water-barrel-ad {
           width: 180px;
           height: 110px;
-          background-image: url('imgs/games/save-the-pig/water-barrel-ad.png');
+          background-image: url('imgs/games/save-the-pig/zimmy-barrel-ad.png');
           position: absolute;
           bottom: 20px;
           left: 30px;
@@ -419,7 +418,7 @@
       position: absolute;
       bottom: 0;
       left: 406px;
-      z-index: 2;
+      z-index: 7;
     }
     .keys-row {
       margin-bottom: 5px
