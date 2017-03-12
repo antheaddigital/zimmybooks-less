@@ -28,6 +28,10 @@ body.book-fullscreen {
   display: none;
 }
 
+.disable-links {
+  pointer-events: none;
+}
+
 .site-wrapper {
   //padding-top: 80px;
   //padding-top: 48px;
@@ -47,14 +51,16 @@ body.book-fullscreen {
   margin: 0 auto;
   padding: 0;
   background-color: #fff;
-  @media (min-width: 1225px){
+  @media (min-width: 1024px){
+    width: 1014px;
+    border-left: 5px solid #3374ff;
+    border-right: 5px solid #3374ff;
+  }
+  @media (min-width: 1290px){
     width: 1280px;
     border-left: 5px solid #3374ff;
     border-right: 5px solid #3374ff;
   }
-  // @media (min-width: 1440px){
-  //   width: 1440px;
-  // }
 }
 
 .header-content {
@@ -63,8 +69,12 @@ body.book-fullscreen {
 
 .site-content-border,
 .header-border {
-  @media (min-width: 1225px){
+  @media (min-width: 1034px){
     display: inline-block;
+    border-left: 5px solid #7dbcfa;
+    border-right: 5px solid #7dbcfa;
+  }
+  @media (min-width: 1225px){
     border-left: 5px solid #7dbcfa;
     border-right: 5px solid #7dbcfa;
   }

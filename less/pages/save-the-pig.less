@@ -161,33 +161,39 @@
           left: 191px;
           border: 5px solid #7b4f00;
           .border-radius(20px);
-          background-color: #168600;
+          background-color: #b0723b;
           text-align: center;
           span {
             margin-bottom: 9px;
-            padding: 6px 0 10px 0;
-            font-size: 16px;
+            padding: 10px 0 10px 0;
+            font-size: 12px;
+            font-weight: bold;
             text-transform: uppercase;
+            letter-spacing: 1px;
             text-align: center;
-            background: #7b4f00;
+            background-color: #5d410f;
             color: #fff;
             display: block;
-            .border-top-left-radius(10px);
-            .border-top-right-radius(10px);
+            .border-top-left-radius(15px);
+            .border-top-right-radius(15px);
           }
           a {
             width: 120px;
-            height: 94px;
+            height: 93px;
             margin-bottom: 5px;
-            padding: 10px 15px;
+            background-image: url('imgs/games/save-the-pig/mode-sign-character.jpg');
             border: none;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
             .border-radius(10px);
             display: inline-block;
+            opacity: 0.5;
+            &.sign {
+              background-position: 0 0;
+            }
+            &.character {
+              background-position: -120px 0;
+            }
             &.active {
-              background-color: #2b4ba3;
+              opacity: 1;
             }
           }
         }
@@ -442,10 +448,12 @@
       text-transform: uppercase;
       font-family: 'Open Sans', sans-serif;
       font-size: 14px;
-      background: brown;
+      .background-image(linear-gradient(to bottom, #df7247 0%,#842600 100%));
       color: #fff;
+      .border-radius(2px);
+      .drop-shadow(0 0 3 #000);
       &.active {
-        background: blue;
+        .background-image(linear-gradient(to bottom, #00d2be 0%,#006a7b 100%));
       }
     }
     .keys-row-3 {
@@ -483,8 +491,8 @@
   background: none;
   position: relative;
   .pig-clean-image {
-    width: 100px;
-    height: 100px;
+    width: 500px;
+    height: 500px;
     background-size: contain;
     margin: 0 auto;
   }
