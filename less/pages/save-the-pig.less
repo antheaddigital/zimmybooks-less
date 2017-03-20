@@ -5,27 +5,24 @@
       //padding: 0 100px;
       text-align: center;
     }
+    .stage-preload {
+      width: 1270px;
+      height: 600px;
+      padding-top: 300px;
+      background-color: #000;
+      .loading-msg {
+        color: #fff;
+      }
+    }
     .stage {
       width: 1270px;
       height: 600px;
       margin: 0 auto;
-      background-image: url('imgs/games/save-the-pig/background.jpg');
       position: relative;
-      .audience {
-        width: 1270px;
-        height: 280px;
-        background-image: url('imgs/games/save-the-pig/background-audience.gif');
-        //background-size: contain;
-        .blur(1px);
-        bottom: 130px;
-        left: 0;
-        position: absolute;
-        z-index: 4;
-      }
+      opacity: 0;
       .game-head-board {
         width: 710px;
         height: 362px;
-        background-image: url('imgs/games/save-the-pig/bigboard.png');
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
@@ -36,7 +33,6 @@
       .game-logo-sign {
         width: 710px;
         height: 362px;
-        background-image: url('imgs/games/save-the-pig/save-the-pig-sign.gif');
         position: absolute;
         top: 1px;
         left: -4px;
@@ -181,7 +177,6 @@
             width: 120px;
             height: 93px;
             margin-bottom: 5px;
-            background-image: url('imgs/games/save-the-pig/mode-sign-character.jpg');
             border: none;
             .border-radius(10px);
             display: inline-block;
@@ -249,7 +244,6 @@
         width: 740px;
         height: 233px;
         position: absolute;
-        background-image: url('imgs/games/save-the-pig/ice-table.png');
         background-repeat: no-repeat;
         bottom: 0;
         left: 275px;
@@ -258,7 +252,6 @@
       .kid-dog-announcer {
         width: 360px;
         height: 390px;
-        background-image: url('imgs/games/save-the-pig/kid-dog-announcer.gif');
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
@@ -269,7 +262,6 @@
       .pig-box {
         width: 270px;
         height: 200px;
-        //background-image: url('../imgs/games/save-the-pig/pig-1.gif');
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
@@ -292,7 +284,11 @@
         }
         &.sign {
           div {
-            background-image: url('imgs/games/save-the-pig/signs.png');
+          }
+        }
+        &.character {
+          div {
+            background-image: none !important;
           }
         }
         .a {
@@ -377,7 +373,6 @@
       .water-barrel-wrapper {
         width: 240px;
         height: 600px;
-        background-image: url('imgs/games/save-the-pig/zimmy-barrel-animated.gif');
         position: absolute;
         bottom: 0;
         right: 10px;
@@ -385,7 +380,6 @@
         .water-barrel-ad {
           width: 180px;
           height: 110px;
-          background-image: url('imgs/games/save-the-pig/zimmy-barrel-ad.png');
           position: absolute;
           bottom: 20px;
           left: 30px;
@@ -417,7 +411,6 @@
       .rat-skunk {
         width: 250px;
         height: 150px;
-        background-image: url('imgs/games/save-the-pig/rat-skunk.gif');
         position: absolute;
         bottom: 0;
         right: 160px;
@@ -428,7 +421,6 @@
       width: 460px;
       height: 138px;
       padding: 15px;
-      background-image: url('imgs/games/save-the-pig/keyboard-backboard.png');
       background-size: cover;
       position: absolute;
       bottom: 0;

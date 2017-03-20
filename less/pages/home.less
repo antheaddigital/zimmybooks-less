@@ -1,7 +1,33 @@
 .page-template-home {
 
   .hero {
-    height: 800px;
+    display: flex;
+    &-left {
+      .flex-basis(50%);
+    }
+    &-right {
+      .flex-basis(50%);
+    }
+  }
+
+  .recent-posts {
+    display: flex;
+    .recent-post {
+      .flex-basis(50%);
+      position: relative;
+      img {
+        
+      }
+      h3 {
+        width: 100%;
+        padding: 20px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .5);
+        color: #fff;
+      }
+    }
   }
 
 }
