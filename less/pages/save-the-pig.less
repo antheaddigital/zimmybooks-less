@@ -8,15 +8,35 @@
     .stage-preload {
       width: 1270px;
       height: 600px;
-      padding-top: 300px;
+      padding-top: 110px;
       background-color: #000;
-      .loading-msg {
+      img {
+        margin-bottom: 30px;
+      }
+      .loading-message-wrapper {
         color: #fff;
+        .loading-timer {
+          margin-bottom: 30px;
+          font-size: 42px;
+          font-weight: bold;
+          span {
+            display: inline-block;
+            width: 87px;
+            text-align: right;
+          }
+        }
+        .loading-message {
+          font-size: 16px;
+        }
+        .loading-thank-you {
+          font-size: 42px;
+          font-weight: bold;
+        }
       }
     }
     .stage {
       width: 1270px;
-      height: 600px;
+      height: 0;
       margin: 0 auto;
       position: relative;
       opacity: 0;
@@ -451,29 +471,6 @@
     .keys-row-3 {
       margin-right: 45px;
     }
-    .game-finished-popup {
-      &-header {
-
-      }
-      &-score-wrapper {
-
-      }
-      &-score {
-
-      }
-      &-streak {
-
-      }
-      &-social-wrapper {
-
-      }
-      &-social-facebook {
-
-      }
-      &-social-twitter {
-
-      }
-    }
   }
 
 }
@@ -502,5 +499,54 @@
         color: red;
       }
     }
+  }
+}
+
+.game-finished-popup {
+  &-header {
+
+  }
+  &-score-wrapper {
+
+  }
+  &-score {
+
+  }
+  &-streak {
+
+  }
+  &-challenge-wrapper {
+    .challenge-header {
+
+    }
+    .challenge-accept {
+
+    }
+    .challenge-settings {
+      .challenge-speed {
+        width: 80px;
+        height: 150px;
+        display: inline-block;
+      }
+      .challenge-strikes {
+        width: 80px;
+        height: 150px;
+        display: inline-block;
+      }
+    }
+  }
+  &-play-again-wrapper {
+    .play-again {
+
+    }
+  }
+  &-social-wrapper {
+
+  }
+  &-social-facebook {
+
+  }
+  &-social-twitter {
+
   }
 }
