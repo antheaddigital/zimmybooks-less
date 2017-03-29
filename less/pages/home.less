@@ -1,40 +1,66 @@
 .page-template-home {
 
   .site-intro {
-    padding-top: 50px;
+    padding: 0 15px;
     background-color: #254374;
     position: relative;
+    @media (min-width: 710px){
+      padding-top: 50px;
+    }
     .intro-wrapper {
-      width: 950px;
+      // width: 950px;
       margin: 0 auto;
+      @media (min-width: 1024px){
+        width: 900px;
+      }
+      @media (min-width: 1290px){
+        width: 950px;
+      }
     }
     &-description {
-      width: 590px;
+      max-width: 590px;
+      margin: 0 auto 20px auto;
       padding-top: 50px;
-      text-align: left;
-      float: left;
+      text-align: center;
       z-index: 2;
       position: relative;
+      @media (min-width: 1024px){
+        width: 590px;
+        margin: 0 auto;
+        float: left;
+        text-align: left;
+      }
       h1 {
         margin-bottom: 13px;
         color: #fff;
-        font-size: 48px;
+        font-size: 42px;
         font-weight: bold;
-        line-height: 60px;
+        line-height: 52px;
         letter-spacing: .5px;
+        @media (min-width: 710px){
+          font-size: 48px;
+          line-height: 60px;
+        }
       }
       p {
-        line-height: 32px;
-        font-size: 20px;
+        line-height: 30px;
+        font-size: 18px;
         letter-spacing: 1px;
         color: #d4e5ff;
+        @media (min-width: 710px){
+          line-height: 32px;
+          font-size: 20px;
+        }
       }
     }
     .zimmy-home {
       width: 300px;
-      float: right;
+      margin: 0 auto;
       z-index: 2;
       position: relative;
+      @media (min-width: 1024px){
+        float: right;
+      }
     }
     canvas.particles-js-canvas-el {
       position: absolute;
@@ -45,7 +71,7 @@
     }
   }
 
-  .books {
+  .featured {
     padding: 50px;
     h2 {
       margin-bottom: 40px;
@@ -55,93 +81,94 @@
       line-height: 55px;
       letter-spacing: .5px;
     }
-    &-copy-wrapper {
+    &-wrapper {
       width: 950px;
-      margin: 0 auto;
-    }
-    &-description {
-      width: 450px;
-      text-align: right;
-      float: left;
-      h3 {
-        margin-bottom: 15px;
-        color: #5b01ff;
-        font-size: 26px;
-        font-weight: bold;
-        line-height: 30px;
-        letter-spacing: .5px;
-      }
-      p {
-        margin-bottom: 20px;
-        line-height: 32px;
-        font-size: 18px;
-        letter-spacing: 1px;
-        color: #254374;
-      }
-      a {
-        color: #fff;
-        background-color: #4a45ff;
-        border-color: #3936ae;
-        &:hover {
-          color: #fff;
-          background-color: #4a45ff;
-          border-color: #3936ae;
+      margin: 0 auto 60px auto;
+      &.featured-left {
+        .featured-description {
+          text-align: right;
+          float: left;
+        }
+        .featured-img {
+          float: right;
         }
       }
-    }
-    &-featured {
-      width: 450px;
-      float: right;
-    }
-  }
+      &.featured-right {
+        .featured-description {
+          text-align: left;
+          float: right;
+        }
+        .featured-img {
+          float: left;
+        }
+      }
+      .featured-description {
+        width: 450px;
+        h3 {
+          margin-bottom: 15px;
+          //color: #5b01ff;
+          font-size: 26px;
+          font-weight: bold;
+          line-height: 30px;
+          letter-spacing: .5px;
+        }
+        p {
+          margin-bottom: 20px;
+          line-height: 32px;
+          font-size: 18px;
+          letter-spacing: 1px;
+          color: #254374;
+        }
+        &.planet-colors {
+          h3 {
 
-  .games {
-    padding: 0 0 50px 0;
-    h2 {
-      margin-bottom: 40px;
-      color: #159d00;
-      font-size: 40px;
-      font-weight: bold;
-      line-height: 55px;
-      letter-spacing: .5px;
-    }
-    &-copy-wrapper {
-      width: 950px;
-      margin: 0 auto;
-    }
-    &-description {
-      width: 450px;
-      text-align: left;
-      float: right;
-      h3 {
-        margin-bottom: 15px;
-        color: #f654dd;
-        font-size: 24px;
-        font-weight: bold;
-        line-height: 30px;
-        letter-spacing: .5px;
-      }
-      p {
-        margin-bottom: 20px;
-        line-height: 32px;
-        font-size: 18px;
-        letter-spacing: 1px;
-        color: #254374;
-      }
-      a {
-        color: #fff;
-        background-color: #f54abd;
-        border-color: #c51229;
-        &:hover {
-          color: #fff;
-          background-color: #f54abd;
-          border-color: #c51229;
+          }
+          a {
+            color: #fff;
+            background-color: #4a45ff;
+            border-color: #3936ae;
+            &:hover {
+              color: #fff;
+              background-color: #4a45ff;
+              border-color: #3936ae;
+            }
+          }
+        }
+        &.bayme-pants-the-sun-its-broken {
+          h3 {
+
+          }
+          a {
+            color: #fff;
+            background-color: #4a45ff;
+            border-color: #3936ae;
+            &:hover {
+              color: #fff;
+              background-color: #4a45ff;
+              border-color: #3936ae;
+            }
+          }
+        }
+        &.save-the-pig {
+          padding-top: 15px;
+          h3 {
+            color: #fa55dd;
+          }
+          a {
+            color: #fff;
+            background-color: #f54abd;
+            border-color: #c51229;
+            &:hover {
+              color: #fff;
+              background-color: #f54abd;
+              border-color: #c51229;
+            }
+          }
         }
       }
-    }
-    &-featured {
-      width: 450px;
-      float: left;
+      .featured-img {
+        width: 450px;
+      }
     }
   }
 
