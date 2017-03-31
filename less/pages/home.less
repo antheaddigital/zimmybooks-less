@@ -20,7 +20,7 @@
     &-description {
       max-width: 590px;
       margin: 0 auto 20px auto;
-      padding-top: 50px;
+      padding-top: 40px;
       text-align: center;
       z-index: 2;
       position: relative;
@@ -51,6 +51,10 @@
           line-height: 32px;
           font-size: 20px;
         }
+        span {
+          margin-top: 10px;
+          display: block;
+        }
       }
     }
     .zimmy-home {
@@ -72,7 +76,10 @@
   }
 
   .featured {
-    padding: 50px;
+    padding: 50px 15px 0 15px;
+    @media (min-width: 1024px){
+      padding: 50px;
+    }
     h2 {
       margin-bottom: 40px;
       color: #159d00;
@@ -82,34 +89,47 @@
       letter-spacing: .5px;
     }
     &-wrapper {
-      width: 950px;
+      max-width: 450px;
       margin: 0 auto 60px auto;
-      &.featured-left {
-        .featured-description {
-          text-align: right;
-          float: left;
+      @media (min-width: 1024px){
+        width: 900px;
+        max-width: inherit;
+        &.featured-left {
+          .featured-description {
+            text-align: right;
+            float: left;
+          }
+          .featured-img {
+            float: right;
+          }
         }
-        .featured-img {
-          float: right;
+        &.featured-right {
+          .featured-description {
+            text-align: left;
+            float: right;
+          }
+          .featured-img {
+            float: left;
+          }
         }
       }
-      &.featured-right {
-        .featured-description {
-          text-align: left;
-          float: right;
-        }
-        .featured-img {
-          float: left;
-        }
+      @media (min-width: 1290px){
+        width: 950px;
       }
       .featured-description {
-        width: 450px;
+        max-width: 450px;
+        @media (min-width: 1024px){
+          padding: 0 40px;
+        }
+        @media (min-width: 1290px){
+          padding: 0;
+        }
         h3 {
           margin-bottom: 15px;
-          //color: #5b01ff;
+          color: #224f92;
           font-size: 26px;
           font-weight: bold;
-          line-height: 30px;
+          line-height: 36px;
           letter-spacing: .5px;
         }
         p {
@@ -117,9 +137,9 @@
           line-height: 32px;
           font-size: 18px;
           letter-spacing: 1px;
-          color: #254374;
+          color: #000;
         }
-        &.planet-colors {
+        &-planet-colors {
           h3 {
 
           }
@@ -129,12 +149,12 @@
             border-color: #3936ae;
             &:hover {
               color: #fff;
-              background-color: #4a45ff;
+              background-color: #3c37e6;
               border-color: #3936ae;
             }
           }
         }
-        &.bayme-pants-the-sun-its-broken {
+        &-bayme-pants-the-sun-its-broken {
           h3 {
 
           }
@@ -144,12 +164,12 @@
             border-color: #3936ae;
             &:hover {
               color: #fff;
-              background-color: #4a45ff;
+              background-color: #3c37e6;
               border-color: #3936ae;
             }
           }
         }
-        &.save-the-pig {
+        &-save-the-pig {
           padding-top: 15px;
           h3 {
             color: #fa55dd;
@@ -160,14 +180,23 @@
             border-color: #c51229;
             &:hover {
               color: #fff;
-              background-color: #f54abd;
+              background-color: #ff00ab;
               border-color: #c51229;
             }
           }
         }
       }
       .featured-img {
-        width: 450px;
+        max-width: 450px;
+        margin-bottom: 20px;
+        display: inline-block;
+        @media (min-width: 1024px){
+          margin-bottom: 0;
+          display: inline;
+        }
+        &-save-the-pig {
+          margin-bottom: 0;
+        }
       }
     }
   }

@@ -52,26 +52,26 @@
       @media (min-width: 450px){
         margin: 0 15px 40px 15px;
       }
-      &-books {
-        border-color: #356bdc;
-      }
-      &-games {
-        border-color: #049400;
-      }
       &-img {
         margin-bottom: 15px;
         display: inline-block;
       }
       &-header {
         margin-bottom: 10px;
-        font-size: 27px;
+        font-size: 26px;
         font-weight: bold;
+        line-height: 36px;
+        letter-spacing: .5px;
         color: #333;
       }
       &-description {
         max-width: 390px;
         margin: 0 auto 15px auto;
-        line-height: 22px;
+        margin-bottom: 20px;
+        line-height: 32px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: #000;
       }
       &-link {
         color: #fff;
@@ -94,6 +94,18 @@
             background-color: #3a9437;
             border-color: #035f00;
           }
+        }
+      }
+      &-books {
+        border-color: #356bdc;
+        .result-header {
+          color: #224f92;
+        }
+      }
+      &-games {
+        border-color: #049400;
+        .result-header {
+          color: #049400;
         }
       }
     }
