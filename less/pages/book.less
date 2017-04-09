@@ -164,7 +164,13 @@
     .page-planet-colors,
     .page-bayme-pants-the-sun-its-broken {
       .book-section {
-        padding: 50px 130px;
+        padding: 20px;
+        @media(min-width: 1024px){
+          padding: 50px;
+        }
+        @media(min-width: 1300px){
+          padding: 50px 130px;
+        }
         .fullscreen-btn {
           .background-image(linear-gradient(to bottom, #3173ab 0%,#197e88 100%));
           color: #fff;
