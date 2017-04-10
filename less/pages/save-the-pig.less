@@ -6,10 +6,15 @@
       text-align: center;
     }
     .stage-preload {
-      width: 1270px;
       height: 600px;
       padding-top: 110px;
       background-color: #000;
+      @media(min-width: 1024px){
+        width: 997px;
+      }
+      @media(min-width: 1300px){
+        width: 1270px;
+      }
       img {
         margin-bottom: 30px;
       }
@@ -35,11 +40,18 @@
       }
     }
     .stage {
-      width: 1270px;
       height: 0;
       margin: 0 auto;
       position: relative;
       opacity: 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+      @media(min-width: 1024px){
+        width: 997px;
+      }
+      @media(min-width: 1300px){
+        width: 1270px;
+      }
       .sound-control {
         &-wrapper {
           position: absolute;
@@ -130,14 +142,21 @@
 
       }
       .game-head-board {
-        width: 710px;
-        height: 362px;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         position: absolute;
         top: 5px;
-        left: 288px;
         z-index: 5;
+        @media(min-width: 1024px){
+          width: 555px;
+          height: 283px;
+          left: 228px;
+        }
+        @media(min-width: 1300px){
+          width: 710px;
+          height: 362px;
+          left: 288px;
+        }
       }
       .game-logo-sign {
         width: 710px;
@@ -351,23 +370,38 @@
         }
       }
       .hidden-track {
-        width: 740px;
-        height: 233px;
         position: absolute;
         background-repeat: no-repeat;
+        background-size: contain;
         bottom: 0;
-        left: 275px;
         z-index: 7;
+        @media(min-width: 1024px){
+          width: 590px;
+          height: 186px;
+          left: 215px;
+        }
+        @media(min-width: 1300px){
+          width: 740px;
+          height: 233px;
+          left: 275px;
+        }
       }
       .kid-dog-announcer {
-        width: 360px;
-        height: 390px;
+
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         position: absolute;
         bottom: 0;
         left: 0;
         z-index: 8;
+        @media(min-width: 1024px){
+          width: 290px;
+          height: 310px;
+        }
+        @media(min-width: 1300px){
+          width: 360px;
+          height: 390px;
+        }
       }
       .pig-box {
         width: 270px;
@@ -528,22 +562,32 @@
       }
     }
     .keyboard-wrapper {
-      width: 460px;
-      height: 138px;
-      padding: 15px;
-      background-size: cover;
+
+      background-size: contain;
+      background-repeat: no-repeat;
       position: absolute;
       bottom: 0;
-      left: 406px;
       z-index: 7;
+      @media(min-width: 1024px){
+        width: 361px;
+        height: 110px;
+        padding: 10px;
+        left: 346px;
+      }
+      @media(min-width: 1300px){
+        width: 460px;
+        height: 138px;
+        padding: 15px;
+        left: 406px;
+      }
     }
     .keys-row {
       margin-bottom: 5px
     }
     .keys-row span {
-      width: 35px;
+
       margin: 0;
-      padding: 10px;
+
       text-align: center;
       //border: 1px solid #ccc;
       display: inline-block;
@@ -556,6 +600,14 @@
       .drop-shadow(0 0 3 #000);
       &.active {
         .background-image(linear-gradient(to bottom, #00d2be 0%,#006a7b 100%));
+      }
+      @media(min-width: 1024px){
+        width: 25px;
+        padding: 7px;
+      }
+      @media(min-width: 1300px){
+        width: 35px;
+        padding: 10px;
       }
     }
     .keys-row-3 {
