@@ -2,10 +2,67 @@
 
   .book-full-page-please-rotate {
     height: 100vh;
+    padding: 0 20px;
     display: flex;
     .align-items(center);
     .justify-content(center);
     text-align: center;
+    img {
+      width: 247px;
+      height: 105px;
+      margin: 0 auto 10px auto;
+    }
+    &-header {
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-size: 28px;
+      font-weight: bold;
+      line-height: 30px;
+    }
+    &-description {
+      margin-bottom: 10px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .book-fullscreen-nav {
+      a {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        padding-top: 7px;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 12px;
+        font-weight: bold;
+        .border-radius(5px);
+        opacity: .7;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      .site-nav {
+        background-color: green;
+        i {
+          font-size: 19px;
+          margin-bottom: 4px;
+        }
+      }
+      .back-to-siteview {
+        background-color: blue;
+        font-size: 12px;
+        font-weight: bold;
+        i {
+          font-size: 19px;
+          margin-bottom: 4px;
+        }
+      }
+      .share {
+        display: none;
+      }
+    }
   }
 
   .white-popup-block {
