@@ -5,6 +5,74 @@
       //padding: 0 100px;
       text-align: center;
     }
+    .mode-select {
+      height: 600px;
+      padding-top: 110px;
+      background-color: #000;
+      position: relative;
+      z-index: 9999;
+      @media(min-width: 1024px){
+        width: 997px;
+      }
+      @media(min-width: 1300px){
+        width: 1270px;
+      }
+      img {
+        margin: 0 auto;
+      }
+      h2 {
+        margin: -210px 0 40px 0;
+        color: #fff;
+        font-size: 48px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      &-wrapper {
+        width: 440px;
+        margin: 0 auto;
+        display: flex;
+        .justify-content(space-between);
+      }
+      &-mode {
+        &-animate {
+          a {
+            background-color: #333;
+            border-color: #999;
+            color: #fff;
+          }
+        }
+        &-still {
+          a {
+            background-color: #333;
+            border-color: #999;
+            color: #fff;
+          }
+        }
+        a {
+          width: 200px;
+          margin-bottom: 20px;
+          font-size: 24px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          text-decoration: none;
+          padding: 20px;
+          border-style: solid;
+          border-width: 5px;
+          display: inline-block;
+          .border-radius(10px);
+          &:hover {
+            background-color: #ff66ff;
+            border-color: #d7183b;
+          }
+        }
+        p {
+          color: #999;
+          line-height: 24px;
+        }
+      }
+    }
     .stage-preload {
       height: 600px;
       padding-top: 110px;
@@ -159,20 +227,34 @@
         }
       }
       .game-logo-sign {
-        width: 710px;
-        height: 362px;
         position: absolute;
         top: 1px;
         left: -4px;
         z-index: 6;
+        background-repeat: no-repeat;
+        background-size: contain;
+        @media(min-width: 1024px){
+          width: 555px;
+          height: 283px;
+        }
+        @media(min-width: 1300px){
+          width: 710px;
+          height: 362px;
+        }
       }
       .game-control-board {
-        width: 710px;
-        height: 153px;
         position: absolute;
         bottom: 10px;
         left: 0;
         z-index: 7;
+        @media(min-width: 1024px){
+          width: 530px;
+          height: 153px;
+        }
+        @media(min-width: 1300px){
+          width: 710px;
+          height: 153px;
+        }
         .player-score-board {
           position: absolute;
           top: -68px;
@@ -407,7 +489,7 @@
         width: 270px;
         height: 200px;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         position: absolute;
         top: -125px;
         left: -10px;
@@ -515,19 +597,38 @@
         }
       }
       .water-barrel-wrapper {
-        width: 240px;
-        height: 600px;
         position: absolute;
         bottom: 0;
-        right: 10px;
         z-index: 6;
+        background-repeat: no-repeat;
+        background-size: contain;
+        @media(min-width: 1024px){
+          width: 190px;
+          height: 470px;
+          right: 0;
+        }
+        @media(min-width: 1300px){
+          width: 240px;
+          height: 600px;
+          right: 10px;
+        }
         .water-barrel-ad {
-          width: 180px;
-          height: 110px;
           position: absolute;
-          bottom: 20px;
-          left: 30px;
           text-align: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          @media(min-width: 1024px){
+            width: 140px;
+            height: 86px;
+            bottom: 30px;
+            left: 25px;
+          }
+          @media(min-width: 1300px){
+            width: 180px;
+            height: 110px;
+            bottom: 20px;
+            left: 30px;
+          }
           .ad {
           }
           .strikes {
@@ -553,12 +654,21 @@
         }
       }
       .rat-skunk {
-        width: 250px;
-        height: 150px;
         position: absolute;
         bottom: 0;
-        right: 160px;
         z-index: 7;
+        background-repeat: no-repeat;
+        background-size: contain;
+        @media(min-width: 1024px){
+          width: 210px;
+          height: 120px;
+          right: 98px;
+        }
+        @media(min-width: 1300px){
+          width: 250px;
+          height: 150px;
+          right: 160px;
+        }
       }
     }
     .keyboard-wrapper {
@@ -572,7 +682,7 @@
         width: 361px;
         height: 110px;
         padding: 10px;
-        left: 346px;
+        left: 333px;
       }
       @media(min-width: 1300px){
         width: 460px;
