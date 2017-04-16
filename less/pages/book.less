@@ -1,5 +1,16 @@
 .page-template-book {
 
+  .book-section-loader {
+    margin-bottom: 10px;
+    padding: 90px 0;
+    font-size: 28px;
+    line-height: 40px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
+    .border-radius(10px);
+    display: block;
+  }
+
   .book-full-page-please-rotate {
     height: 100vh;
     padding: 0 20px;
@@ -142,7 +153,7 @@
   }
   .page-bayme-pants-the-sun-its-broken {
     .book-section {
-      background-image: url('imgs/books/bayme-pants/the-sun-its-broken/background.jpg');
+      background-image: url('imgs/books/bayme-pants-the-sun-its-broken/background.jpg');
       background-repeat: repeat;
       //background-size: cover;
     }
@@ -265,7 +276,7 @@
         }
       }
     }
-    .slider {
+    .swiper-container {
       /*max-width: 900px;*/
       margin: 0 auto;
       /*margin: 0 auto 20px auto;*/
@@ -274,28 +285,9 @@
       box-shadow: 0px 0px 37px -5px rgba(0,0,0,0.75);
     }
 
-    .slick-slide {
-      outline: none !important;
-    }
-
-    .slick-prev, .slick-next {
-      width: 50px;
-      height: 50px;
-      opacity: .3;
-      z-index: 10;
-    }
-
-    .slick-prev {
-      left: 10px;
-    }
-
-    .slick-next {
-      right: 10px;
-    }
-
-    .slick-prev:before, .slick-next:before {
-      font-size: 50px;
-      color: #fff;
+    .wrapper {
+      // display: none;
+      opacity: 0;
     }
 
     .slider-page {
@@ -365,6 +357,7 @@
     .book-section {
       .wrapper {
         display: inline-block;
+        display: none;
         position: relative;
       }
     }
