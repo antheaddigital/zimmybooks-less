@@ -1,9 +1,18 @@
 .back-to-top {
-    padding: 5px 3px;
-    background: #000;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: none;
+  a {
+    padding: 10px;
+    background-color: #00781f;
     color: #fff;
-    position: fixed;
-    bottom: 0;
-    right: 5px;
-    display: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    &:hover {
+      background-color: #005b18;
+    }
+  }
 }
