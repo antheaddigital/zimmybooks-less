@@ -4,6 +4,7 @@
     .wrapper {
       //padding: 0 100px;
       text-align: center;
+      overflow: hidden;
     }
     .mode-select {
       height: 600px;
@@ -911,30 +912,17 @@
     &-social-wrapper {
       margin-bottom: 18px;
       a {
+        width: 73px;
         margin-right: 15px;
         display: inline-block;
-      }
-      i {
-        font-size: 86px;
-        line-height: 75px;
-        .border-radius(15px);
-        background-color: #fff;
-        display: inline-block;
-      }
-    }
-    &-social-facebook {
-      i {
-        color: #3B5998;
-      }
-    }
-    &-social-twitter {
-      i {
-        color: #36B9FF;
-      }
-    }
-    &-social-youtube {
-      i {
-        color: #ee1c1b;
+        img {
+          .filter(grayscale(100));
+        }
+        &:hover {
+          img {
+            .filter(none);
+          }
+        }
       }
     }
     &-play-again-wrapper {
