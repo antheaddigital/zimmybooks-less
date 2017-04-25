@@ -16,21 +16,54 @@
       font-weight: 600;
       text-align: center;
     }
-    .description {
+    h3 {
       margin-bottom: 15px;
-      p {
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 1px;
-      }
-    }
-    .requirements {
-      margin-bottom: 15px;
-      font-size: 18px;
+      font-size: 22px;
       font-weight: 600;
     }
-    .share {
+    .description,
+    .study-guide {
+      margin-bottom: 20px;
+      p {
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 1px;
+        color: #e5e5e5;
+      }
+    }
+    .instructions,
+    .requirements,
+    .troubleshooting {
+      margin-bottom: 20px;
+      &-list {
+        margin-left: 20px;
+        li {
+          margin-bottom: 10px;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 1px;
+          color: #e5e5e5;
+          b {
+            color: #fff;
+          }
+        }
+      }
+      &-sublist {
+        margin-left: 20px;
+        li {
+          margin-bottom: 0;
+        }
+      }
       ul {
+        list-style: disc;
+      }
+      ol {
+        list-style: decimal;
+      }
+    }
+    .share {
+      .share-list {
         li {
           margin-right: 5px;
           float: left;
@@ -54,18 +87,20 @@
             &.social-email {
               padding: 8px 0 0 0;
             }
+            &:hover {
+              opacity: .8;
+            }
           }
         }
       }
     }
   }
   &.bayme-pants-the-sun-its-broken {
+    background-color: #1e3773;
     .book-game-description-wrapper {
       h1 {
       }
-      .description {
-        p {
-        }
+      p {
       }
       .requirements {
       }
@@ -74,7 +109,7 @@
           li {
             a {
               i {
-                color: #423206;
+                color: #152751;
               }
             }
           }
@@ -83,12 +118,11 @@
     }
   }
   &.planet-colors {
+    background-color: #363636;
     .book-game-description-wrapper {
       h1 {
       }
-      .description {
-        p {
-        }
+      p {
       }
       .requirements {
       }
@@ -97,7 +131,7 @@
           li {
             a {
               i {
-                color: #423206;
+                color: #332606;
               }
             }
           }
@@ -109,9 +143,7 @@
     .book-game-description-wrapper {
       h1 {
       }
-      .description {
-        p {
-        }
+      p {
       }
       .requirements {
       }
