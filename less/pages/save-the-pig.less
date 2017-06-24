@@ -533,9 +533,14 @@
             }
             span {
               margin-top: 5px;
-              font-size: 12px;
               display: block;
               line-height: 15px;
+              @media(min-width: 1024px){
+                font-size: 11px;
+              }
+              @media(min-width: 1300px){
+                font-size: 12px;
+              }
             }
           }
         }
