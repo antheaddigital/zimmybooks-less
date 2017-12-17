@@ -46,73 +46,29 @@
       padding: 45px 30px;
     }
     .result {
-      .flex-basis(100%);
-      margin: 0 0 15px 0;
-      padding: 15px 15px 25px 15px;
-      //background-color: #f3f3f3;
-      .background-image(linear-gradient(to bottom, #f3f3f3 0%,#fff 100%));
+      max-width: 270px;
+      margin: 10px;
+      padding: 5px;
       border: 5px solid;
       .border-radius(10px);
       text-align: center;
       .box-shadow(0px 1px 5px 1px #434343);
-      .flex-basis(360px);
       @media (min-width: 450px){
         margin: 0 15px 40px 15px;
       }
-      &-img {
-        margin-bottom: 15px;
-        display: inline-block;
-      }
-      &-header {
-        margin-bottom: 10px;
-        font-size: 26px;
-        font-weight: bold;
-        line-height: 36px;
-        letter-spacing: .5px;
-        color: #333;
-      }
-      &-description {
-        max-width: 390px;
-        margin: 0 auto 15px auto;
-        margin-bottom: 20px;
-        line-height: 32px;
-        font-size: 18px;
-        letter-spacing: 1px;
-        color: #000;
-      }
-      &-link {
-        color: #fff;
-        &:hover {
-          color: #fff;
-        }
-        &-books {
-          background-color: #4a45ff;
-          border-color: #3936ae;
-          &:hover {
-            color: #fff;
-            background-color: #3936ae;
-            border-color: #3936ae;
-          }
-        }
-        &-games {
-          background-color: #3a9437;
-          border-color: #035f00;
-          &:hover {
-            background-color: #035f00;
-            border-color: #035f00;
-          }
-        }
+      img {
+        .border-radius(5px);
       }
       &-books {
         border-color: #356bdc;
-        .result-header {
-          color: #224f92;
+        &:hover {
+          border-color: #284fa0;
         }
       }
       &-games {
         border-color: #049400;
-        .result-header {
-          color: #049400;
+        &:hover {
+          border-color: #0f6f0d;
         }
       }
     }
