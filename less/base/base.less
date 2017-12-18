@@ -4,7 +4,7 @@ html {
 
 body {
   position: relative;
-  background-color: #abceff;
+  background-color: #efefef;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -40,7 +40,8 @@ body.book-fullscreen {
   //padding-top: 80px;
   //padding-top: 48px;
   text-align: center;
-  @media (min-width: 880px){
+  @media (min-width: 1024px){
+    padding-bottom: 40px;
     //padding-top: 80px;
   }
 }
@@ -54,16 +55,23 @@ body.book-fullscreen {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  background-color: #fff;
+  background-color: transparent;
   @media (min-width: 1024px){
     width: 1007px;
-    border-left: 5px solid #3374ff;
-    border-right: 5px solid #3374ff;
+  }
+  // @media (min-width: 1300px){
+  //   width: 1280px;
+  // }
+}
+
+.site-content {
+  background-color: #fff;
+  @media (min-width: 1024px){
+    //border: 5px solid #3374ff;
+    .border-radius(10px);
   }
   @media (min-width: 1300px){
-    width: 1280px;
-    border-left: 5px solid #3374ff;
-    border-right: 5px solid #3374ff;
+    //border: 5px solid #3374ff;
   }
 }
 
@@ -71,13 +79,32 @@ body.book-fullscreen {
 .header-border {
   @media (min-width: 1034px){
     display: inline-block;
-    border-left: 5px solid #7dbcfa;
-    border-right: 5px solid #7dbcfa;
   }
-  // @media (min-width: 1225px){
-  //   border-left: 5px solid #7dbcfa;
-  //   border-right: 5px solid #7dbcfa;
-  // }
+}
+
+// .site-content-border {
+//   @media (min-width: 1034px){
+//     .border-radius(15px);
+//     //border: 5px solid #7dbcfa;
+//   }
+// }
+
+.home .site-content {
+  @media (min-width: 1024px){
+    border: 5px solid #254374;
+  }
+}
+
+.category-books .site-content {
+  @media (min-width: 1024px){
+    border: 5px solid #254374;
+  }
+}
+
+.category-games .site-content {
+  @media (min-width: 1024px){
+    border: 5px solid #049400;
+  }
 }
 
 section,
