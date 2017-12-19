@@ -1,0 +1,7 @@
+.image-rendering(@render) {
+  image-rendering: -moz-@render;         /* Firefox */
+  image-rendering:   -o-@render;         /* Opera */
+  image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+  image-rendering: @render;
+  -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
