@@ -47,6 +47,56 @@
         font-size: 36px;
       }
     }
+    .swiper-slide {
+      .more-things-to-do-wrapper {
+        width: 100%;
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      .more-things-to-do-link {
+        margin: 25px;
+        border: 5px solid;
+        .border-radius(10px);
+        .box-shadow(0px 1px 5px 1px #434343);
+        border-color: #356bdc;
+        position: relative;
+        @media(min-width: 480px){
+          margin: 45px;
+        }
+        @media(min-width: 600px){
+          margin: 65px;
+        }
+        &-left {
+          margin-right: 8px;
+        }
+        &-right {
+          margin-left: 8px;
+        }
+        &:hover {
+          border-color: #284fa0;
+        }
+        img {
+          border-radius: 5px;
+        }
+        .books-and-games-type {
+          padding: 10px 15px;
+          color: #fff;
+          font-size: 28px;
+          letter-spacing: 1px;
+          font-weight: bold;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          text-transform: uppercase;
+          opacity: .9;
+          .border-bottom-right-radius(5px);
+          .border-top-left-radius(5px);
+          background-color: #356bdc;
+        }
+      }
+    }
   }
 
   .white-popup-block {
@@ -114,6 +164,11 @@
       background-image: url('imgs/books/bayme-pants-the-sun-its-broken/background.jpg');
       background-repeat: repeat;
       //background-size: cover;
+    }
+  }
+  .page-flax-vs-santa {
+    .book-section {
+      background-color: #7D0101;
     }
   }
 
